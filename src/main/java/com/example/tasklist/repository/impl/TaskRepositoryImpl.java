@@ -2,10 +2,12 @@ package com.example.tasklist.repository.impl;
 
 import com.example.tasklist.domain.task.Task;
 import com.example.tasklist.repository.TaskRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class TaskRepositoryImpl implements TaskRepository {
 
     @Override
@@ -37,5 +39,5 @@ public class TaskRepositoryImpl implements TaskRepository {
     public void delete(Long id) {
 
     }
-    
+
 }
